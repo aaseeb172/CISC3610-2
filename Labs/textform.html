@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Welcome! please look below and pick your output options</h1>
+<p>Please enter or select your desired values</p>
+  <label for="name">Name: (first and last)</label>
+  <input type="text" id="name" name="name" placeholder="Name" ><br><br>
+  <label for=" color"> Pick a color for the background</label>
+  <input type="color" name="color" id="color" required /><br><br>
+  <label for=" fontcolor"> Pick a color for text color</label>
+  <input type="color" name="fontcolor" id="fontcolor"  /> <br><br>
+  <label for="font">Choose a font size: </label>
+<input
+  type="range"
+  name="font"
+  id="font"
+  min="12"
+  max="48"
+  step="1"
+  value="12"
+  class= "slider"
+    />
+<output class="font-output" for="font"></output> <br><br>
+<p>Chose your desired font:</p>
+  <input type="radio" name="textfont" id="verdana" value="verdana">
+  <label for="verdana">Verdana</label><br>
+  <input type="radio" name="textfont" id="tahoma" value="tahoma">
+  <label for="tahoma">Tahoma</label><br>
+  <input type="radio" name="textfont" id="italic" value="italic">
+  <label for="italic">Italic</label><br><br>
+
+<button onclick="myFunction()">Display</button>
+
+<p id = "demo"></p>
+<script>
+    var canvas= undefined;
+    var ct= undefined;
+const font = document.querySelector("#font");
+const output = document.querySelector(".font-output");
+
+output.textContent = font.value;
+
+font.addEventListener("input", () => {
+  output.textContent = font.value;
+});
+function myFunction() {
+  document.body.style.backgroundColor = document.getElementById("color").value;
+  document.getElementById("demo").innerHTML = document.getElementById("name").value;
+  document.getElementById("demo").style.color = document.getElementById("fontcolor").value;
+  document.getElementById("demo").style.fontStyle = document.getElementById("textfont").value;
+  document.body.style.fontSize =  font.value + "px";
+ 
+}
+
+</script>
+
+
+
+</body>
+</html>
+
