@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Lab</title>
+</head>
+<style>
+    body {
+        background-color: rgb(250, 250, 250);
+        width: 300px;
+        border: 15px solid rgb(1, 14, 1);
+        padding: 50px;
+        margin: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        
+     }
+</style>
+<body>
+    <p>below we have a sound machine, click to play audio</p>
+    <audio id="music">
+        <source src="audio/game-start-6104.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="music2">
+        <source src="audio/cartoon-jump-6462.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="music3">
+        <source src="audio/cartoon-spin-7120.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="music4">
+        <source src="audio/swim-44183.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="music5">
+        <source src="audio/small-applause-6695.mp3" type="audio/mpeg">
+      </audio>
+      
+      
+      <button onclick="playEffect()" type="button">1</button>
+      <button onclick="playNext()" type="button">2</button>
+      <button onclick="playLater()" type="button">3</button>
+      <button onclick="playFourth()" type="button">4</button>
+      <button onclick="playFifth()" type="button">5</button>
+     
+
+    
+
+<script>
+    
+var x = document.getElementById("music"); 
+var y= document.getElementById("music2");
+var z= document.getElementById("music3");
+var a= document.getElementById("music4");
+var b= document.getElementById("music5");
+
+function playEffect() { 
+  x.play(); 
+}
+function playNext() {
+    y.play();
+}
+function playLater() {
+    z.play();
+}
+function playFourth() {
+    a.play();
+}
+function playFifth() {
+    b.play();
+}
+
+
+</script>
+</body>
+
+</html>

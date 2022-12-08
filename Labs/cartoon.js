@@ -1,7 +1,7 @@
 // creates our variables
 var canvas = undefined;
 var ct = undefined;
-var linkText="https://github.com/aaseeb172/CISC3610-2";
+var linkText="https://aaseeb172.github.io/CISC3610-2/";
 var linkX=10;
 var linkY=300;
 var linkHeight=10;
